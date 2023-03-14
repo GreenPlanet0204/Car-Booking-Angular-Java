@@ -1,0 +1,17 @@
+<mat-toolbar class="cars-header">
+  <div class="cars-header__name">eBookings</div>
+  <cars-header-navbar></cars-header-navbar>
+  <button [matMenuTriggerFor]="menu" class="cars-header__profile" mat-button>
+    <div class="cars-header__profile_group">
+      <span class="cars-header__profile_group_name">User</span>
+      <span class="cars-header__profile_group_avatar">U</span>
+    </div>
+  </button>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>block</mat-icon>
+    <span>Logout</span>
+  </button>
+</mat-menu>
